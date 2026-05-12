@@ -1,0 +1,19 @@
+{
+  "name": "placey-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "zip": "node scripts/zip.mjs",
+    "bundle": "npm run build && npm run zip",
+    "deploy": "node scripts/deploy.mjs",
+    "ship": "npm run bundle && npm run deploy"
+  },
+  "dependencies": {
+    "@aws-sdk/client-secrets-manager": "3.1045.0",
+    "pg": "8.13.3"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.4"
+  }
+}
