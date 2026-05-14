@@ -34,7 +34,8 @@ placey-backend/
 │   ├── routes/       # Lambda entry points
 │   └── services/     # Business logic (proximity search)
 ├── scripts/          # Build, zip, and deploy scripts
-├── docs/             # API and database reference
+├── db/               # Database dump and seed data
+├── docs/             # API, database, and deployment reference
 └── dist/             # Build output (gitignored)
 ```
 
@@ -100,6 +101,10 @@ Each Lambda function requires the following environment variables, set via the A
 | `DB_SECRET_ARN`     | ARN of the Secrets Manager secret with DB credentials |
 | `DB_PROXY_ENDPOINT` | Hostname of the RDS Proxy                             |
 | `NODE_ENV`          | `dev`                                                 |
+
+## Deployment
+
+See [`docs/deploy.md`](docs/deploy.md) for the full step-by-step deployment guide.
 
 ## API
 

@@ -11,6 +11,9 @@ placey-backend/
 │   ├── models/       # Data models (Place, Category)
 │   ├── routes/       # Lambda entry points (search-places.mjs, get-place.mjs)
 │   └── services/     # Business logic (proximity search, filtering)
+├── scripts/          # Build, zip, and deploy scripts
+├── db/               # Database dump and seed data
+├── docs/             # API, database, and deployment reference
 ├── dist/             # Build output — gitignored
 │   ├── search-places/
 │   │   └── index.mjs
